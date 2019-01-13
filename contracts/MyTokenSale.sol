@@ -3,7 +3,7 @@ pragma solidity >=0.4.21 <0.6.0;
 import "./MyToken.sol";
 
 contract MyTokenSale {
-	address admin;
+	address payable admin;
 	MyToken public tokenContract;
 	uint256 public tokenPrice;
 	uint256 public tokensSold;
@@ -39,6 +39,16 @@ contract MyTokenSale {
 		tokensSold += _numberOfTokens;
 		//trigger a sell event
 		emit Sell(msg.sender, _numberOfTokens);
+	}
+
+	//ending the token sale
+	function endSale () public {
+		//require admin to do this
+		require (msg.sender == admin);
+		//transfer the left amount of tokens to admin
+		require (tokenContract.transfer(admin, tokenContract.balanceOf(address(this))));
+		//destroy this contract
+		selfdestruct(admin);
 	}
 	
 
