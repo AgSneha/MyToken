@@ -5020,12 +5020,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5001e11f1260C1b17D8E2F96F41272b4380C60eB",
-      "transactionHash": "0x1c4f8c1611674e60a49934f32adda37add8cc25d29db77338dcc245077ee7c14"
+      "address": "0xfA08EC99546A72aBd3e88fbb1A3Ea33a54eA3124",
+      "transactionHash": "0xb82f14f565c3c3387ee92f08fc2d94fce3c9fd6b5b707157fd3c5fe87de21489"
     }
   },
   "schemaVersion": "3.0.0",
-  "updatedAt": "2019-01-13T11:26:20.589Z",
+  "updatedAt": "2019-01-14T18:31:33.521Z",
   "devdoc": {
     "methods": {}
   },

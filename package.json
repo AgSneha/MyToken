@@ -1,0 +1,17 @@
+{
+	"name": "my-token-sale",
+	"version": "1.0.0",
+	"description": "My Token Sale ICO",
+	"main": "truffle.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"dev": "lite-server"
+	},
+	"author": "Sneha Agarwalla",
+	"license": "ISC",
+	"devDependency": {
+		"lite-server": "^2.3.0"
+	}
+}
